@@ -14,7 +14,7 @@
   },
   "customHandler": {
     "description": {
-      "defaultExecutablePath": "lambda-statuses",
+      "defaultExecutablePath": "status",
       "workingDirectory": "",
       "arguments": []
     },
