@@ -11,7 +11,7 @@ Open `host.json` and inside `customHandler` > `description` > `defaultExecutable
 
 Run the function with `func start`. Be sure to have installed [Func 3.x](https://learn.microsoft.com/it-IT/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#v2)
 
-Go to this URL and see the function working (http://localhost:7071/api/HttpExample?name=Functions)
+Go to this URL and see the function working (http://localhost:7071/api/status?name=Functions)
 
 To deploy, create a file `.cargo/config`, and write this inside it:
 ```
@@ -29,3 +29,5 @@ cp target/x86_64-unknown-linux-musl/release/handler .
 If you are on a Windows system, the latter will cause issues. Manually copy the file and rename it according to your needs/likings
 
 Eventually, where you had the `host.json` file and you wrote the name of the folder, now write the name of the latest copied file (without .exe)
+
+To deploy on Azure, follow [this tutorial](https://learn.microsoft.com/en-US/azure/azure-functions/create-first-function-vs-code-other?tabs=rust%2Cwindows#create-the-function-app-in-azure)
