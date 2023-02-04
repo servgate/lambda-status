@@ -14,3 +14,5 @@ __azurite_db*__.json
 
 /target
 .vscode
+cfg.txt
+_old
