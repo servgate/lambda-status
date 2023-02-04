@@ -326,14 +326,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fad582f4b9e86b6caa621cabeb0963332d92eea04729ab12892c2533951e6440"
 
 [[package]]
-name = "lambda-status"
-version = "0.1.0"
-dependencies = [
- "tokio",
- "warp",
-]
-
-[[package]]
 name = "libc"
 version = "0.2.139"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -627,6 +619,14 @@ checksum = "02e2d2db9033d13a1567121ddd7a095ee144db4e1ca1b1bda3419bc0da294ebd"
 dependencies = [
  "libc",
  "winapi",
+]
+
+[[package]]
+name = "status"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+ "warp",
 ]
 
 [[package]]
